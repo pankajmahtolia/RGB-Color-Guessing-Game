@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Great RBG Game</title>
+	<link rel="stylesheet" type="text/css" href="rbggame.css">
+</head>
+<body>
+<h1>The Great
+<br>
+<span id="colorDisplay">RBG</span>
+<br>
+Color Guessing Game </h1>
+<div id="strip">
+
+  <button id="reset">New Colors</button>
+  <span id="message"></span>
+  <button id="easy">Easy</button>
+  <button id="hard" class="selected">Hard</button>
+
+</div>
+  <div class="container">
+  	<div class="square"></div>
+  	<div class="square"></div>
+  	<div class="square"></div>
+  	<div class="square"></div>
+  	<div class="square"></div>
+  	<div class="square"></div>
+  </div>
+
+ 
+   <div><footer>Made with &hearts; by Pankaj Mahtolia</footer>
+    </div> 
+    
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCaG-K_1-r67ahmvSkTa002tMQd8XqcB6U",
+    authDomain: "rgb-color-guessing-game.firebaseapp.com",
+    databaseURL: "https://rgb-color-guessing-game.firebaseio.com",
+    projectId: "rgb-color-guessing-game",
+    storageBucket: "rgb-color-guessing-game.appspot.com",
+    messagingSenderId: "601165577896"
+  };
+  firebase.initializeApp(config);
+</script>
+
+  <script type="text/javascript" src="rbggame.js"></script> 
+</body>
+</html>
